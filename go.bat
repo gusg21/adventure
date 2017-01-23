@@ -15,6 +15,6 @@ if EXIST script.bat ( call script.bat )
 echo.
 echo.
 set /p input=Choice: 
-if EXIST %input% ( cd %input% ) else ( echo Unknown Option! && pause>nul )
+if EXIST "%input%" ( cd "%input%" ) else ( echo Unknown Option! && pause>nul )
 cls
 goto A
