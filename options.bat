@@ -7,4 +7,4 @@ title Adventure
 color 9f
 
 :: Exit option
-set hasExitOption=0
+set canUndo=1
