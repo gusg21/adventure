@@ -46,6 +46,7 @@ if %saveSystem% EQU 1 (
 if "%input%" EQU "save" (
 REM Handle command
 (
+  echo set timeSaved=%TIME%
   echo cd %CD%
 ) > "%topPath%/data/last-save.bat"
 echo Saved.
@@ -61,7 +62,7 @@ if "%input%" EQU "load" (
 REM Handle command
 if EXIST "%topPath%/data/last-save.bat" (
 call "%topPath%/data/last-save.bat"
-echo Loaded.
+echo Loaded save from: %timeSaved%
 ) else (
 echo No save file found!
 )
