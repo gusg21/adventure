@@ -47,7 +47,7 @@ if "%input%" EQU "save" (
 REM Handle command
 (
   echo set timeSaved=%TIME%
-  echo echo Save file from:%DATE% - %TIME%
+  echo echo Save file from: [%DATE% - %TIME%]
 ) > "%topPath%/data/last-save.bat"
 echo Saved.
 pause >nul
